@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menubar and image gallery</title>
+    <style>
+        * {}
+        
+        .menu {
+            min-height: 45px;
+            background-color: orange;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .menu ul li {
+            float: left;
+            border-right: 1px solid yellow;
+            border-left: 1px solid darkorange;
+            position: relative;
+        }
+        
+        .menu ul li:first-child {
+            border-left: none
+        }
+        
+        .menu ul li:last-child {
+            border-right: none;
+        }
+        
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px 69px;
+            transition: 3s;
+        }
+        
+        .menu ul li a:hover {
+            background-color: darkorange;
+            transform: rotate(360deg) scale(1.5);
+            transform:
+        }
+        /*dropdown menu*/
+        
+        .menu ul li ul {
+            background-color: orange;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            left: -999999px;
+            width: 200px;
+        }
+        
+        .menu ul li:hover ul {
+            left: 0px;
+        }
+        
+        .menu ul li ul li:first-child {
+            border-top: 1px solid yellow;
+        }
+        
+        .menu ul li ul li {
+            float: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid yellow;
+        }
+        
+        .menu ul li ul li a {
+            padding: 12px 50px;
+        }
+        
+        .menu ul li ul li a:hover;
+        .single_gallery {
+            width: 20%;
+        }
+        
+        .photo_section {
+            border: 1px solid blue;
+        }
+        
+        .photo_section img {
+            height: 180px;
+            width: 150px;
+        }
+        
+        .caption {
+            text-align: center;
+        }
+        
+        .caption p {}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu_wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a>
+                        <ul>
+                            <li><a href="">web design</a></li>
+                            <li><a href="">web development</a></li>
+                            <li><a href="">graphic design</a></li>
+                            <li><a href="">app design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Our Teachers</a>
+                        <ul>
+                            <li><a href="">web design</a></li>
+                            <li><a href="">web development</a></li>
+                            <li><a href="">graphic design</a></li>
+                            <li><a href="">app design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Our courses</a>
+                        <ul>
+                            <li><a href="">web design</a></li>
+                            <li><a href="">web development</a></li>
+                            <li><a href="">graphic design</a></li>
+                            <li><a href="">app design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact us</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="single_gallery">
+            <div class="photo_section">
+                <img src="images/tigers.jpg" alt="image missing">
+            </div>
+            <div class="caption">
+                <p>Image Caption</p>
+            </div>
+        </div>
+        <div class="single_gallery">
+            <div class="photo_section">
+                <img src="images/tigers.jpg" alt="image missing">
+            </div>
+            <div class="caption">
+                <p>Image Caption</p>
+            </div>
+        </div>
+        <div class="single_gallery">
+            <div class="photo_section">
+                <img src="images/tigers.jpg" alt="image missing">
+            </div>
+            <div class="caption">
+                <p>Image Caption</p>
+            </div>
+        </div>
+        <div class="single_gallery">
+            <div class="photo_section">
+                <img src="images/tigers.jpg" alt="image missing">
+            </div>
+            <div class="caption">
+                <p>Image Caption</p>
+            </div>
+        </div>
+        <div class="single_gallery">
+            <div class="photo_section">
+                <img src="images/tigers.jpg" alt="image missing">
+            </div>
+            <div class="caption">
+                <p>Image Caption</p>
+            </div>
+        </div>
+        <div class="single_gallery">
+            <div class="photo_section">
+                <img src="images/tigers.jpg" alt="image missing">
+            </div>
+            <div class="caption">
+                <p>Image Caption</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
